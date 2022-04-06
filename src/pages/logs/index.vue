@@ -40,6 +40,7 @@ import qrcode2 from '../../../static/images/qrcode2.png'
 import switchIcon from '../../../static/images/switch.png'
 import avator1 from '../../../static/images/avator1.jpg'
 import avator2 from '../../../static/images/avator2.jpg'
+import avator3 from '../../../static/images/avator3.jpg'
 export default {
   data () {
     return {
@@ -57,6 +58,13 @@ export default {
         studentId: '2020205051',
         college: '化学化工学院',
         class: '化学2020'
+      },
+      userMsg3: {
+        avatorSrc: avator3,
+        name: '梁家豪',
+        studentId: '2018442756',
+        college: '建筑工程学院',
+        class: '土木2018-03'
       },
       qrcode: true, // 显示在页面上的二维码
       qrcode1,
@@ -163,12 +171,15 @@ export default {
       }, 1000)
     },
     comfire () {
-      if (this.studentId === '2021201116' || this.studentId === '2020205051') {
+      if (this.studentId === '2021201116' || this.studentId === '2020205051' || this.studentId === '2018442756') {
         if (this.studentId === '2021201116') {
           this.userMsg = this.userMsg1
         }
         if (this.studentId === '2020205051') {
           this.userMsg = this.userMsg2
+        }
+        if (this.studentId === '2018442756') {
+          this.userMsg = this.userMsg3
         }
         wx.setStorage({
           key: 'studentId',
