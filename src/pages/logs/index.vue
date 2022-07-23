@@ -16,7 +16,7 @@
           <p>学院 : {{ userMsg.college }}</p>
           <p>班级 : {{ userMsg.class }}</p>
           <p>宿舍 : 走读</p>
-          <img class="qrcode-img-new" :src="qrcode4true" alt="二维码">
+          <img class="qrcode-img-new" :src="qrcode3" alt="二维码">
           <p>{{ nowTime }}</p>
         </div>
       </div>
@@ -37,6 +37,7 @@
 <script>
 import qrcode1 from '../../../static/images/qrcode1.png'
 import qrcode2 from '../../../static/images/qrcode2.png'
+// qrcode3---绿色二维码
 import qrcode3 from '../../../static/images/qrcode3.png'
 import qrcode4true from '../../../static/images/qrcode4true.png'
 import switchIcon from '../../../static/images/switch.png'
