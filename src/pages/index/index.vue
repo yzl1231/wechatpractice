@@ -34,6 +34,7 @@ import icon4 from '../../../static/images/icon4.png'
 import icon5 from '../../../static/images/icon5.png'
 import icon6 from '../../../static/images/icon6.png'
 import icon7 from '../../../static/images/icon7.png'
+// import icon8 from '../../../static/images/icon8.png'
 export default {
   data () {
     return {
@@ -59,8 +60,8 @@ export default {
         iconSrc: icon7,
         title: '返校申请'
       }, {
-        iconSrc: null,
-        title: '-'
+        iconSrc: icon6,
+        title: '校外离渝'
       }, {
         iconSrc: null,
         title: '-'
