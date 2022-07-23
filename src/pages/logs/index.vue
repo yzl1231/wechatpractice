@@ -16,7 +16,7 @@
           <p>学院 : {{ userMsg.college }}</p>
           <p>班级 : {{ userMsg.class }}</p>
           <p>宿舍 : 走读</p>
-          <img class="qrcode-img-new" :src="qrcode3" alt="二维码">
+          <img class="qrcode-img-new" :src="qrcode4true" alt="二维码">
           <p>{{ nowTime }}</p>
         </div>
       </div>
@@ -38,6 +38,7 @@
 import qrcode1 from '../../../static/images/qrcode1.png'
 import qrcode2 from '../../../static/images/qrcode2.png'
 import qrcode3 from '../../../static/images/qrcode3.png'
+import qrcode4true from '../../../static/images/qrcode4true.png'
 import switchIcon from '../../../static/images/switch.png'
 import avator1 from '../../../static/images/avator1.jpg'
 import avator2 from '../../../static/images/avator2.jpg'
@@ -71,6 +72,7 @@ export default {
       qrcode1,
       qrcode2,
       qrcode3,
+      qrcode4true,
       switchIcon,
       timer: null, // 计时器，实时显示当前时间
       nowTime: '', // 当前时间
